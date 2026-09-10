@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CampusMate AI</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+    <div class="chat-container">
+
+        <!-- Header -->
+        <div class="chat-header">
+            <div class="logo">🎓</div>
+
+            <div>
+                <h1>CampusMate AI</h1>
+                <p>Sir Issac Newton College</p>
+            </div>
+        </div>
+
+
+        <!-- Chat Messages -->
+        <div id="chat-box" class="chat-box">
+
+            <div class="message bot-message">
+                <div class="avatar">🤖</div>
+
+                <div class="message-content">
+                    <strong>CampusMate AI</strong>
+                    <p>
+                        Hello! 👋<br>
+                        I am CampusMate AI.
+                        Ask me anything about
+                        Sir Issac Newton College, Nagapattinam.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+
+        <!-- Input Area -->
+        <div class="input-area">
+
+            <input
+                type="text"
+                id="user-input"
+                placeholder="Ask about the college..."
+                autocomplete="off"
+            >
+
+            <button id="send-btn">
+                Send
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+
+</body>
+
+</html>
